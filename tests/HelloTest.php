@@ -2,14 +2,12 @@
 
 require('vendor/autoload.php');
 
-use PHPUnit\Framework\TestCase;
-
-class HelloTest extends TestCase
+class HelloTest extends PHPUnit_Framework_TestCase
 {
     public function testWorld()
     {
         $hello = new Hello();
 
-		$this->assertEquals('Hello world', $hello->world());
+        $this->assertEquals('Hello world', $hello->world());
     }
 }
